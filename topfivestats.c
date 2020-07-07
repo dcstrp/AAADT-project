@@ -1,7 +1,7 @@
 /**
  * @file topfivestats.c
  * @author Pedro Vitória
- * @brief Provides implentations for all operations related to the <b><i>TopFiveStats</i></b> data type
+ * @brief Provides implementations for all operations related to the <b><i>TopFiveStats</i></b> data type
  */
 
 #include <stdio.h>

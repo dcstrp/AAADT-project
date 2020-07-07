@@ -1,7 +1,7 @@
 /**
  * @file region.c
  * @author Pedro Vitória
- * @brief Provides implementation for all operations related to the <b><i>Region</i></b> data type
+ * @brief Provides implementations for all operations related to the <b><i>Region</i></b> data type
  */
 
 #include "region.h"
