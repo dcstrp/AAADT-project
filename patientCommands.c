@@ -227,9 +227,11 @@ int top5(PtList patientsList)
     int patientsToDisplay = 5; //Change this value to show more patients.
     for (int i = 0; i < patientsToDisplay; i++)
     {
-        getPatientByID(patientsReleasedList, topFiveStatsArray[i].patientID, &releasedPatient);
-        patientPrintSHOW(releasedPatient, topFiveStatsArray[i].daysWithIllness);
-        printf("\n");
+        if (getPatientByID(patientsReleasedList, topFiveStatsArray[i].patientID, &releasedPatient))
+        {
+            patientPrintSHOW(releasedPatient, topFiveStatsArray[i].daysWithIllness);
+            printf("\n");
+        }
     }
     //Dealloc the list we used to filter.
     listDestroy(&patientsReleasedList);
