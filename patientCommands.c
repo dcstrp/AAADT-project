@@ -2,6 +2,7 @@
  * @file patientCommands.c
  * @author Pedro Vitória
  * @brief Provides implementations for all patient-related commands.
+ * @bug [GROWTH] Subtracting -1 to obtain the previous date may cause issues if the day == 1.
  */
 
 #include <string.h>
